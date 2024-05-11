@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+      }
+
+      .row > div {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      textarea {
+        height: 100%;
+      }
+
+      .content {
+        height: 500px;
+        background-color: green;
+      }
+    </style>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <!-- <h1>hello world</h1>
+
+    <div class="code-bg-container">
+      <img src="assets/code-bg.png" alt="profile pic background" />
+    </div>
+
+    <br /> -->
+    <div class="row">
+      <div class="left">
+        <h1>Stuff</h1>
+        <textarea></textarea>
+      </div>
+      <div class="right">
+        <h1>Preview</h1>
+        <div class="content"></div>
+      </div>
+    </div>
+  </body>
+</html>

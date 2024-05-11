@@ -1,0 +1,16 @@
+.code-bg-container {
+  /* background-color: black;
+  width: 300px;
+  height: 200px;
+  transform: skew(10deg, 0deg);
+  border-right: 300px solid; */
+  width: 25px;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #555;
+}
+
+.code-bg-container img {
+  width: 100%;
+}
