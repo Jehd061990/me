@@ -79,3 +79,13 @@ const sStake = new IntersectionObserver(
 sStkholders.forEach((fstkholder) => {
   sStake.observe(fstkholder);
 });
+
+// let ulAbout = document.querySelectorAll(".about-page nav ul li .tab");
+
+// window.onscroll = function () {
+//   if (window.pageYOffset > 0) {
+//     ulAbout.style.color = "white";
+//   } else if (window.pageYOffset < 10) {
+//     ulAbout.style.color = "black";
+//   }
+// };

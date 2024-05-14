@@ -36,6 +36,73 @@ nav {
   top: 2%;
 }
 
+nav #nav-bg {
+  background-color: var(--grey);
+  /* background-color: yellow; */
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  /* z-index: -1; */
+  transform: translateY(-40px);
+  opacity: 0;
+  filter: blur(10px);
+  border-radius: 30px;
+}
+
+nav #nav-bg.scrolled-down {
+  animation: 0.2s nav-bg-s-d linear forwards;
+}
+
+@keyframes nav-bg-s-d {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav #nav-bg.scrolled-up {
+  animation: 0.5s nav-bg-s-u linear forwards;
+}
+
+@keyframes nav-bg-s-u {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+nav.scrolled-down {
+  animation: 0.5s nav-scrolled-down linear forwards;
+}
+
+@keyframes nav-scrolled-down {
+  from {
+    top: 2%;
+  }
+  to {
+    top: 3%;
+  }
+}
+
+nav.scrolled-up {
+  animation: 0.5s nav-scrolled-up linear forwards;
+}
+
+@keyframes nav-scrolled-up {
+  from {
+    top: 3%;
+  }
+  to {
+    top: 2%;
+  }
+}
+
 nav .brand {
   position: relative;
 }
