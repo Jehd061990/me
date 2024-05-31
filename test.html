@@ -3,49 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <style>
-      .row {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: space-between;
-      }
-
-      .row > div {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-
-      textarea {
-        height: 100%;
-      }
-
-      .content {
-        height: 500px;
-        background-color: green;
-      }
-    </style>
-    <link rel="stylesheet" href="test.css" />
+    <title>Toggle Scroll Example</title>
   </head>
   <body>
-    <!-- <h1>hello world</h1>
-
-    <div class="code-bg-container">
-      <img src="assets/code-bg.png" alt="profile pic background" />
+    <button id="toggleScroll" style="position: fixed">Toggle Scroll</button>
+    <div style="height: 2000px; background: linear-gradient(white, black)">
+      Scrollable Content
     </div>
+    <script>
+      const toggleScrollButton = document.getElementById("toggleScroll");
+      let scrollDisabled = false;
 
-    <br /> -->
-    <div class="row">
-      <div class="left">
-        <h1>Stuff</h1>
-        <textarea></textarea>
-      </div>
-      <div class="right">
-        <h1>Preview</h1>
-        <div class="content"></div>
-      </div>
-    </div>
+      const disableScroll = () => {
+        window.scrollTo(0, 0);
+      };
+
+      toggleScrollButton.addEventListener("click", () => {
+        if (scrollDisabled) {
+          window.onscroll = null;
+          console.log("Y");
+        } else {
+          window.onscroll = disableScroll;
+          console.log("D");
+        }
+        // scrollDisabled = !scrollDisabled;
+      });
+
+      console.log(scrollDisabled);
+    </script>
   </body>
 </html>
