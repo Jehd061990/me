@@ -79,9 +79,16 @@ function navBtn() {
     expandNavMidBar.classList.add("deactive");
     expandNavBotBar.classList.add("deactive");
     expandNavBotBarSpan.classList.add("deactive");
+
+    ulAbout.forEach(function (tab) {
+      tab.classList.remove("white");
+    });
   } else {
     console.log("enable");
     window.onscroll = null;
+    ulAbout.forEach(function (tab) {
+      tab.classList.add("white");
+    });
 
     expandNavTopBarSpan.classList.remove("deactive");
     expandNavMidBar.classList.remove("deactive");

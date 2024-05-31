@@ -68,7 +68,7 @@ nav .nav-btn {
   position: absolute;
   margin: auto;
   right: 5%;
-  top: 5px;
+  top: 2px;
   background-color: #32ab3e;
   display: none;
   border: none;
@@ -101,7 +101,7 @@ nav .nav-btn .top {
 }
 
 nav .nav-btn .top.active {
-  animation: nav-btn-top 0.5s ease-out forwards;
+  animation: nav-btn-top 0.2s ease-out forwards;
 }
 
 @keyframes nav-btn-top {
@@ -138,7 +138,7 @@ nav .nav-btn .top span {
 }
 
 nav .nav-btn .top span.active {
-  animation: nav-btn-top-span 0.2s linear 0.5s forwards;
+  animation: nav-btn-top-span 0.1s linear 0.2s forwards;
 }
 
 @keyframes nav-btn-top-span {
@@ -170,7 +170,7 @@ nav .nav-btn .mid {
 }
 
 nav .nav-btn .mid.active {
-  animation: nav-btn-mid 0.2s linear 0.5s forwards;
+  animation: nav-btn-mid 0.1s linear 0.2s forwards;
 }
 
 @keyframes nav-btn-mid {
@@ -204,7 +204,7 @@ nav .nav-btn .bot {
 }
 
 nav .nav-btn .bot.active {
-  animation: nav-btn-bot 0.5s ease-out forwards;
+  animation: nav-btn-bot 0.2s ease-out forwards;
 }
 
 @keyframes nav-btn-bot {
@@ -241,7 +241,7 @@ nav .nav-btn .bot span {
 }
 
 nav .nav-btn .bot span.active {
-  animation: nav-btn-bot-span 0.2s linear 0.5s forwards;
+  animation: nav-btn-bot-span 0.1s linear 0.2s forwards;
 }
 
 @keyframes nav-btn-bot-span {
@@ -375,6 +375,10 @@ nav ul li .tab {
   color: var(--white);
   font-weight: 200;
   transition: color 1s linear;
+}
+
+nav ul li .tab.white {
+  color: var(--white) !important;
 }
 
 nav ul li .tab:hover {
@@ -847,7 +851,7 @@ nav ul li .action:hover {
   z-index: -1;
   left: 8%;
   right: 0;
-  top: -60px;
+  top: -35px;
 }
 
 .code-bg-container::after {
@@ -859,7 +863,7 @@ nav ul li .action:hover {
   position: absolute;
   /* opacity: 0.5; */
   filter: blur(20px);
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   transition: background-color 1s linear;
 }
 
